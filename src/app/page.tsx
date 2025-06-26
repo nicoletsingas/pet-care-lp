@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Hero from "@/components/Hero";
 
 export default function Home() {
-  return (
-    <section>
-      <h1>Pet Care</h1>
-    </section>
-  );
+    return (
+        <main>
+            <Hero />
+        </main>
+    );
 }
