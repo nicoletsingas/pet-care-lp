@@ -30,13 +30,24 @@ export default function Hero() {
                             Contato via WhatsApp
                         </a>
                     </button>
-                    <div className="flex flex-row">
-                        <span className="font-bold bg-black px-2 py-1 rounded-[5px] items-center justify-center flex">
-                            5%
-                        </span>
-                        <span className="flex items-center justify-center">
-                            de desconto na primeira compra
-                        </span>
+                    <div className="flex flex-col gap-5">
+                        <div className="flex flex-row">
+                            <span className="font-bold bg-black px-2 py-1 rounded-[5px] items-center justify-center flex">
+                                5%
+                            </span>
+                            <span className="flex items-center justify-center">
+                                de desconto na primeira compra
+                            </span>
+                        </div>
+                        <Image
+                            src={'/cat-hero.png'}
+                            alt="gato hero"
+                            className="hidden lg:block object-fill"
+                            quality={100}
+                            priority
+                            width={100}
+                            height={100}
+                        />
                     </div>
                 </div>
                 <div className="hidden lg:block">
@@ -50,7 +61,7 @@ export default function Hero() {
                         priority
                     />
                 </div>
-                <div className='hidden lg:block absolute bottom-0 left-0'>
+                <div className="hidden lg:block absolute bottom-0 left-0">
                     <Image
                         src={'/cat-hero.png'}
                         alt="gato hero"
